@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area of Triangle</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <h2>Fun with Triangles<i class="fad fa-triangle"></i></h2>
+      <ul>
+        <li><a href="index.html">Is Triangle</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hypotenuse.html">Hypotenuse</a></li>
+        <li><a href="areaOfTriangle.html">Area</a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <h1>Calculate Area of Triangle</h1>
+      <label for="">Base = </label>
+      <input type="number" name="" class="side-input" />
+      <label for="">Height = </label>
+      <input type="number" name="" class="side-input" />
+      <button id="hypotenuse-btn"><span> Calculate Area</span></button>
+      <div id="output"></div>
+    </div>
+
+    <script>
+      const sides = document.querySelectorAll(".side-input");
+      const hypotenuseBtn = document.querySelector("#hypotenuse-btn");
+      const outputEl = document.querySelector("#output");
+
+      function calculateAreaOfTriangles(a, b) {
+        return (1 / 2) * (a + b);
+      }
+      function calculateArea() {
+        const aot = calculateAreaOfTriangles(sides[0].value, sides[1].value);
+        outputEl.innerText = `Area of the Triangle is ${aot}`;
+      }
+
+      hypotenuseBtn.addEventListener("click", calculateArea);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <h2>Fun with Triangles<i class="fad fa-triangle"></i></h2>
+      <ul>
+        <li><a href="index.html">Is Triangle</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hypotenuse.html">Hypotenuse</a></li>
+        <li><a href="areaOfTriangle.html">Area</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>Triangle Quiz</h1>
+      <form action="" class="quiz-form">
+        <div class="question-container">
+          <p>
+            What is the third angle for the Triangle where angle1 = 45deg and
+            angle2 = 45deg?
+          </p>
+
+          <label for=""
+            ><input type="radio" name="question1" id="" value="45" />45
+            degree</label
+          >
+          <label for=""
+            ><input type="radio" name="question1" id="" value="60" />60
+            degree</label
+          >
+          <label for=""
+            ><input type="radio" name="question1" id="" value="90 degree" />90
+            degree</label
+          >
+        </div>
+
+        <div class="question-container">
+          <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+
+          <label for=""
+            ><input type="radio" name="question2" id="" value="acute" />Acute
+          </label>
+          <label for=""
+            ><input type="radio" name="question2" id="" value="obtuse" />Obtuse
+          </label>
+          <label for=""
+            ><input
+              type="radio"
+              name="question2"
+              id=""
+              value="Right angled"
+            />Right angled
+          </label>
+        </div>
+      </form>
+      <button id="submit-answer-btn">Submit</button>
+      <div id="output"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
